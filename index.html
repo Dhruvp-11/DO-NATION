@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+	<title>DONATION</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/tsf-icon.jpg" type="image/x-icon">
+<style type="text/css">
+	*{
+		box-sizing: border-box;
+		margin: 0px;
+		padding: 0px;
+     }
+     html {
+        font-size: 100%;
+     }
+     .bg { 
+     	height: 100vh;
+     	width: 100%;
+     	background-image: linear-gradient(90deg, rgba(255,239,186,0.7),rgba(255,255,255,0.7)),url('images/handr.jpg'); 
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+     }
+    nav {
+    	background: #0082e6;
+    	width: 100%;
+    	height: 80px;
+    	padding-top: 10px;
+    	line-height: 60px;
+    }
+    .micon img{
+        float: left;
+    	margin-left: 20px;
+     	width: 60px;
+     	height:70px;
+    }
+     .micon h3{
+         float: left;
+         font-family: 'Saira Semi Condensed', sans-serif; 
+         font-size: 1.9rem;
+        margin-left: 10px;
+    }
+    .icon{
+        display: none;
+    }
+    ul
+    {
+        list-style: none;
+        float: right;
+        margin:0;
+        padding: 0;
+        display: flex;
+    }
+    .menu li {
+        margin: 0px 30px;
+    }
+    .menu a {
+         font-family: 'Saira Semi Condensed', sans-serif; 
+        font-size: 1.25rem;
+        text-decoration: none;
+        padding: 03px 05px;
+        color: white;
+        font-weight: bold;
+    }
+    .menu a:hover {
+    color: black;
+    background-color: #DCDCDC;
+    border-radius: 4px;
+    }
+    .maintxt{
+        text-align:center;
+        margin-top: 150px;
+        color: #000080;
+    }
+    .maintxt span{
+        color: red;
+        font-weight: bold;
+    }
+    .maintxt #btn{
+        display: inline-block;
+        margin-top: 60px;
+        font-family: 'Saira Semi Condensed', sans-serif; 
+        border: 2px solid black; 
+        border-radius: 4px;
+        background-color: #33ccff;
+        color: black;  
+        text-decoration: none;
+        padding: 05px 05px;
+        font-size: 1.25rem;
+    }
+    #btn:hover
+    {
+        color:white;
+        background-color: red;
+    }
+    footer 
+    {
+    text-align: center;
+    width: 100vw;
+    margin-top: 200px;
+    }
+    @media screen and   (max-width: 700px){
+      .bg{
+        -webkit-background-size:cover; 
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        background-size: cover;
+      }  
+      html{
+        font-size: 90%;
+      }
+       footer 
+         {
+           margin-top: 180px;
+         }
+      ul{
+        display: none;
+      }
+
+      .icon {
+        display: inline-block;
+        float: right;
+        color: white;
+        margin-right:30px; 
+        font-size: 1.8rem;
+      }
+      .menu {
+        float: right;
+        position: absolute;
+        margin-top: 70px;
+        width: 100%;
+        background-color:#333333;
+     }
+      .menu li {
+        text-align: center;
+        display: block;
+       
+      }
+    }
+     @media screen and (max-width: 420px){
+        html{
+            font-size: 70%;
+        }
+    }
+</style>
+</head>
+<body class="bg">
+	<nav>
+		<div class="micon">
+			<img src="images\tsf-logo.png" alt="tsf-logo">
+            <h3>DO-NATION</h3>
+		</div>
+		<div>
+			<ul class="menu" id="mynav">
+			   <li> <a href="">HOME</a></li>
+			   <li> <a href="">SERVICES</a></li>
+			   <li> <a href="about.html">ABOUT US</a></li>
+			</ul>
+            <a href="#" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+		</div>
+        
+	</nav>
+    <div class="maintxt">
+        <h2>"YOUR <span>ACT</span> IS APPRECIATING"</h2>
+        <a href="https://rzp.io/l/jCLuzl9" id="btn">DONATE NOW</a><br>
+    </div>
+    <footer>
+    <p class="tc">
+        Copyright © <script>document.write(new Date().getFullYear());</script> All rights reserved
+    </p>
+    </footer>
+    <script type="text/javascript">
+    function myFunction() {
+        var x = document.getElementById('mynav');
+        if(x.style.display === "none"){
+            x.style.display = "block";
+        }
+        else {
+            x.style.display = "none";
+        }
+    }
+    </script>
+</body>
+</html>
